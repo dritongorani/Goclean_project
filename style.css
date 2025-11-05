@@ -1,0 +1,257 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('nettoyage.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid #27ae60;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero-overlay {
+    text-align: center;
+    padding: 2rem 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    max-width: 90%;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #eee;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA */
+.cta-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.cta-btn:hover {
+    background: #219653;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+}
+
+/* SERVICES */
+.services {
+    padding: 4rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #1a1a1a;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background: #f8fff9;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e0f7e9;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(39, 174, 96, 0.15);
+    background: #fff;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.service p {
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 0.5rem;
+    color: #2d2d2d;
+}
+
+.service p::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+    padding: 4rem 1rem;
+    background: #f8fff9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.info-sup {
+    margin: 2rem 0;
+    font-size: 1.05rem;
+    color: #2d2d2d;
+    line-height: 1.8;
+}
+
+.info-sup strong {
+    color: #27ae60;
+}
+
+/* Boutons contact */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.call-btn, .whatsapp-btn {
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.call-btn {
+    background: #3498db;
+}
+
+.call-btn:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background: #1da851;
+    transform: translateY(-3px);
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a1a;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.3rem; }
+    .hero h2 { font-size: 1.8rem; }
+    .hero p { font-size: 1rem; }
+    
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call-btn, .whatsapp-btn, .cta-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
