@@ -315,3 +315,7 @@ main {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.hero {
+    background-attachment: scroll !important; /* Fixes parallax on mobile */
+}
